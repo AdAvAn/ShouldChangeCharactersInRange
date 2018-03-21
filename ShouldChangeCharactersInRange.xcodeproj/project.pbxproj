@@ -10,8 +10,12 @@
 		DEC83F0D206260230018F3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83F0C206260230018F3F5 /* AppDelegate.swift */; };
 		DEC83F0F206260230018F3F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83F0E206260230018F3F5 /* ViewController.swift */; };
 		DEC83F12206260230018F3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC83F10206260230018F3F5 /* Main.storyboard */; };
-		DEC83F14206260230018F3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC83F13206260230018F3F5 /* Assets.xcassets */; };
 		DEC83F17206260230018F3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC83F15206260230018F3F5 /* LaunchScreen.storyboard */; };
+		DEC83F21206261710018F3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC83F20206261710018F3F5 /* Assets.xcassets */; };
+		DEC83F2420626FAA0018F3F5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83F2320626FAA0018F3F5 /* String.swift */; };
+		DEC83F27206270140018F3F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83F26206270140018F3F5 /* Constants.swift */; };
+		DEC83F29206284500018F3F5 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83F28206284500018F3F5 /* UITextField.swift */; };
+		DEC83F2B20628AE60018F3F5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83F2A20628AE60018F3F5 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +23,13 @@
 		DEC83F0C206260230018F3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC83F0E206260230018F3F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEC83F11206260230018F3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DEC83F13206260230018F3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC83F16206260230018F3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEC83F18206260230018F3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC83F20206261710018F3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEC83F2320626FAA0018F3F5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DEC83F26206270140018F3F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DEC83F28206284500018F3F5 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		DEC83F2A20628AE60018F3F5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		DEC83F0B206260230018F3F5 /* ShouldChangeCharactersInRange */ = {
 			isa = PBXGroup;
 			children = (
+				DEC83F2520626FFB0018F3F5 /* Constants */,
+				DEC83F2220626F550018F3F5 /* Extensions */,
+				DEC83F18206260230018F3F5 /* Info.plist */,
+				DEC83F1F2062611E0018F3F5 /* Storyboard */,
+				DEC83F1E206260FC0018F3F5 /* Source */,
 				DEC83F0C206260230018F3F5 /* AppDelegate.swift */,
 				DEC83F0E206260230018F3F5 /* ViewController.swift */,
-				DEC83F10206260230018F3F5 /* Main.storyboard */,
-				DEC83F13206260230018F3F5 /* Assets.xcassets */,
-				DEC83F15206260230018F3F5 /* LaunchScreen.storyboard */,
-				DEC83F18206260230018F3F5 /* Info.plist */,
 			);
 			path = ShouldChangeCharactersInRange;
+			sourceTree = "<group>";
+		};
+		DEC83F1E206260FC0018F3F5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DEC83F20206261710018F3F5 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DEC83F1F2062611E0018F3F5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DEC83F10206260230018F3F5 /* Main.storyboard */,
+				DEC83F15206260230018F3F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DEC83F2220626F550018F3F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEC83F2320626FAA0018F3F5 /* String.swift */,
+				DEC83F28206284500018F3F5 /* UITextField.swift */,
+				DEC83F2A20628AE60018F3F5 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEC83F2520626FFB0018F3F5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DEC83F26206270140018F3F5 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC83F17206260230018F3F5 /* LaunchScreen.storyboard in Resources */,
-				DEC83F14206260230018F3F5 /* Assets.xcassets in Resources */,
+				DEC83F21206261710018F3F5 /* Assets.xcassets in Resources */,
 				DEC83F12206260230018F3F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC83F2420626FAA0018F3F5 /* String.swift in Sources */,
+				DEC83F29206284500018F3F5 /* UITextField.swift in Sources */,
+				DEC83F2B20628AE60018F3F5 /* UIViewController.swift in Sources */,
 				DEC83F0F206260230018F3F5 /* ViewController.swift in Sources */,
 				DEC83F0D206260230018F3F5 /* AppDelegate.swift in Sources */,
+				DEC83F27206270140018F3F5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
